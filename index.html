@@ -3,112 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shayla Reid | Mechanical Engineer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Modern inline styles for a black background */
-        body {
-            background-color: black; /* Black background */
-            color: white; /* White text for readability */
-            font-family: 'Roboto', sans-serif; /* Modern font */
-            margin: 0;
-            padding: 0;
-        }
-
-        header, footer {
-            background-color: #1a1a1a; /* Slightly lighter black for sections */
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        a {
-            color: #00bcd4; /* Modern cyan color for links */
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 50px 0;
-        }
-    </style>
+    <title>Your Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <header>
-        <div class="container">
-            <h1>Shayla Reid</h1>
-            <p>Mechanical Engineer | Innovator | Problem Solver</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a Mechanical Engineering student with a passion for designing solutions that make everyday life easier. With hands-on experience in mechanical design, prototyping, and problem-solving, I strive to bring innovative ideas to life.</p>
-        </div>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Hi, I'm [Your Name]</h1>
+        <p>Mechanical Engineering Student | Passionate about [Your Interests]</p>
+        <a href="#projects">Check out my projects</a>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>Project 1: Jam-Spreading Machine</h3>
-                <p>A mechanical design for a jam-spreading machine that ensures even distribution of jam on bread.</p>
-                <a href="https://github.com/Shayla-Rd/jam-spreader" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Project 2: Portable Liquid Dispenser</h3>
-                <p>A TSA-approved portable dispenser designed for traveling, optimizing convenience for storing liquids like shampoo and conditioner.</p>
-                <a href="https://github.com/Shayla-Rd/portable-dispenser" target="_blank">View on GitHub</a>
-            </div>
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title</h3>
+            <p>Brief description of the project. Technologies used: [List Technologies]</p>
+            <a href="link-to-project" target="_blank">View Project</a>
         </div>
+        <!-- Repeat project blocks as needed -->
     </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Skills & Tools</h2>
-            <ul>
-                <li>SolidWorks</li>
-                <li>AutoCAD</li>
-                <li>3D Printing</li>
-                <li>MATLAB</li>
-                <li>FEA (Finite Element Analysis)</li>
-                <li>Python</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </div>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Brief introduction about your academic background, passions, and goals.</p>
+        <a href="YourResume.pdf" download>Download Resume</a>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me for collaborations or inquiries.</p>
-            <a href="mailto:shayla.reid@example.com">Email Me</a>
-        </div>
+        <h2>Contact</h2>
+        <p>Email: [Your Email]</p>
+        <p>LinkedIn: <a href="LinkedInProfile" target="_blank">Your LinkedIn</a></p>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Shayla Reid</p>
-        </div>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
     </footer>
 </body>
 </html>
+In the styles.css, focus on layout and typography:
+
+css
+Copy code
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
