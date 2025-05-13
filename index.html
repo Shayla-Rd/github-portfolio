@@ -9,50 +9,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
             <h1>Shayla Reid</h1>
             <p>Mechanical Engineer | Innovator | Problem Solver</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-content">
             <h2>About Me</h2>
-            <p>I'm a Mechanical Engineering student with a passion for designing solutions that make everyday life easier. With hands-on experience in mechanical design, prototyping, and problem-solving, I'm dedicated to turning ideas into functional and efficient products.</p>
-            <img src="https://via.placeholder.com/600x300.png?text=Mechanical+Engineering+Image" alt="Mechanical Engineering Image" class="responsive-image">
+            <p>I am a Mechanical Engineering student with a passion for designing solutions that make everyday life easier. My experience in mechanical design, prototyping, and problem-solving fuels my drive to create functional and efficient products.</p>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="container">
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-content">
             <h2>My Projects</h2>
             <div class="project">
-                <h3>Project 1: Jam-Spreading Machine</h3>
+                <h3>Jam-Spreading Machine</h3>
                 <p>A mechanical design for a jam-spreading machine that ensures even distribution of jam on bread.</p>
                 <a href="https://github.com/Shayla-Rd/jam-spreader" target="_blank">View on GitHub</a>
-                <img src="https://via.placeholder.com/600x300.png?text=Project+Image" alt="Jam-Spreading Machine" class="responsive-image">
             </div>
             <div class="project">
-                <h3>Project 2: Portable Liquid Dispenser</h3>
+                <h3>Portable Liquid Dispenser</h3>
                 <p>A TSA-approved portable dispenser designed for traveling, optimizing convenience for storing liquids like shampoo and conditioner.</p>
                 <a href="https://github.com/Shayla-Rd/portable-dispenser" target="_blank">View on GitHub</a>
-                <img src="https://via.placeholder.com/600x300.png?text=Project+Image" alt="Portable Liquid Dispenser" class="responsive-image">
             </div>
-            <!-- Add more projects as you go -->
         </div>
     </section>
 
-    <section id="skills">
-        <div class="container">
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-content">
             <h2>Skills & Tools</h2>
             <ul>
                 <li>SolidWorks</li>
@@ -62,23 +66,23 @@
                 <li>FEA (Finite Element Analysis)</li>
                 <li>Python</li>
                 <li>Git & GitHub</li>
-                <!-- Add more skills as needed -->
             </ul>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-content">
             <h2>Contact Me</h2>
             <p>Feel free to reach out to me for collaborations or inquiries.</p>
             <a href="mailto:shayla.reid@example.com">Email Me</a>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Shayla Reid</p>
-        </div>
+        <p>&copy; 2025 Shayla Reid</p>
     </footer>
+
 </body>
 </html>
