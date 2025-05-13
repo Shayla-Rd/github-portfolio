@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shayla Reid | Mechanical Engineer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Example styling for tabs */
         body {
             margin: 0;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+            background-color: #121212;
+            color: #e0e0e0;
         }
 
         .navbar {
             display: flex;
             justify-content: flex-end;
-            background-color: #333;
+            background-color: #1f1f1f;
             padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
         }
 
         .navbar ul {
@@ -34,25 +35,30 @@
 
         .navbar ul li a {
             text-decoration: none;
-            color: white;
+            color: #00e5ff;
             padding: 8px 12px;
+            border: 2px solid transparent;
             border-radius: 4px;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
         }
 
         .navbar ul li a:hover {
-            background-color: #575757;
+            color: #121212;
+            background-color: #00e5ff;
+            border-color: #00e5ff;
         }
 
         .hero {
             text-align: center;
             padding: 100px 20px;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #1f1f1f, #121212);
         }
 
         .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3.5rem;
             margin: 0;
-            font-size: 3rem;
+            color: #00e5ff;
         }
 
         .hero p {
@@ -65,11 +71,41 @@
             text-align: center;
         }
 
+        .project {
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #1f1f1f;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        .project a {
+            color: #00e5ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .project a:hover {
+            color: #ff4081;
+        }
+
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #333;
-            color: white;
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
@@ -86,60 +122,50 @@
 
     <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-content">
-            <h1>Shayla Reid</h1>
-            <p>Mechanical Engineer | Innovator | Problem Solver</p>
-        </div>
+        <h1>Shayla Reid</h1>
+        <p>Mechanical Engineer | Innovator | Problem Solver</p>
     </header>
 
     <!-- About Section -->
     <section id="about" class="section">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>I am a Mechanical Engineering student at Cornell University with a deep passion for innovation and problem-solving. My journey began at Eleanor Roosevelt High School...</p>
-        </div>
+        <h2>About Me</h2>
+        <p>I am a Mechanical Engineering student at Cornell University with a deep passion for innovation and problem-solving. My journey began at Eleanor Roosevelt High School...</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section">
-        <div class="section-content">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>Jam-Spreading Machine</h3>
-                <p>A mechanical design for a jam-spreading machine that ensures even distribution of jam on bread.</p>
-                <a href="https://github.com/Shayla-Rd/jam-spreader" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Portable Liquid Dispenser</h3>
-                <p>A TSA-approved portable dispenser designed for traveling, optimizing convenience for storing liquids like shampoo and conditioner.</p>
-                <a href="https://github.com/Shayla-Rd/portable-dispenser" target="_blank">View on GitHub</a>
-            </div>
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Jam-Spreading Machine</h3>
+            <p>A mechanical design for a jam-spreading machine that ensures even distribution of jam on bread.</p>
+            <a href="https://github.com/Shayla-Rd/jam-spreader" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Portable Liquid Dispenser</h3>
+            <p>A TSA-approved portable dispenser designed for traveling, optimizing convenience for storing liquids like shampoo and conditioner.</p>
+            <a href="https://github.com/Shayla-Rd/portable-dispenser" target="_blank">View on GitHub</a>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section">
-        <div class="section-content">
-            <h2>Skills & Tools</h2>
-            <ul>
-                <li>SolidWorks</li>
-                <li>AutoCAD</li>
-                <li>3D Printing</li>
-                <li>MATLAB</li>
-                <li>FEA (Finite Element Analysis)</li>
-                <li>Python</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </div>
+        <h2>Skills & Tools</h2>
+        <ul>
+            <li>SolidWorks</li>
+            <li>AutoCAD</li>
+            <li>3D Printing</li>
+            <li>MATLAB</li>
+            <li>FEA (Finite Element Analysis)</li>
+            <li>Python</li>
+            <li>Git & GitHub</li>
+        </ul>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-        <div class="section-content">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me for collaborations or inquiries.</p>
-            <a href="mailto:shayla.reid@example.com">Email Me</a>
-        </div>
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for collaborations or inquiries.</p>
+        <a href="mailto:shayla.reid@example.com">Email Me</a>
     </section>
 
     <!-- Footer -->
