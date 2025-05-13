@@ -3,193 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>My Cool Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <h1>Hi, I'm [Your Name]</h1>
-    <p>Welcome to my portfolio!</p>
-    <a href="#contact" class="btn">Let's Connect</a>
-  </section>
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #f093fb, #f5576c);
+      min-height: 100vh;
+    }
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>[Write about yourself here]</p>
-  </section>
+    /* Navbar */
+    header {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-icons">
-      <i class="fab fa-html5"></i>
-      <i class="fab fa-css3-alt"></i>
-      <i class="fab fa-js-square"></i>
-      <!-- Add more based on your skills -->
-    </div>
-  </section>
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>Brief description of your project.</p>
-        <a href="#" target="_blank">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Brief description of your project.</p>
-        <a href="#" target="_blank">View Project</a>
-      </div>
-    </div>
-  </section>
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Get in touch with me via email or social media.</p>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-    </div>
-  </section>
+    nav a:hover {
+      color: #f093fb;
+    }
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
-  </footer>
+    /* Hero Section */
+    #hero {
+      text-align: center;
+      padding: 10rem 2rem;
+      color: #fff;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    }
 
-  <script src="script.js"></script>
-</body>
-</html>
-style.css
-This file defines the style for the portfolio.
+    #hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      animation: fadeInDown 2s;
+    }
 
-CSS
-/* General Reset */
-body, h1, h2, p {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    #hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      animation: fadeInUp 2s;
+    }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background: #f7f7f7;
-}
+    #hero .btn {
+      background: #f093fb;
+      color: #fff;
+      padding: 0.7rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      transition: background 0.3s ease;
+    }
 
-/* Navbar */
-header {
-  background: #333;
-  color: #fff;
-  padding: 1rem 2rem;
-}
+    #hero .btn:hover {
+      background: #f5576c;
+    }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
+    /* About Section */
+    #about, #skills, #projects, #contact {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: #fff;
+      margin: 2rem auto;
+      border-radius: 10px;
+      max-width: 80%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      color: #f5576c;
+    }
 
-nav a:hover {
-  text-decoration: underline;
-}
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #555;
+    }
 
-/* Hero Section */
-#hero {
-  text-align: center;
-  padding: 5rem 2rem;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
-  color: #fff;
-}
+    /* Skills Section */
+    .skill-icons i {
+      font-size: 3rem;
+      margin: 1rem;
+      color: #f093fb;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
 
-#hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
+    .skill-icons i:hover {
+      transform: scale(1.2);
+      color: #f5576c;
+    }
 
-#hero .btn {
-  background: #333;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 5px;
-}
+    /* Projects Section */
+    .project-grid {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-#hero .btn:hover {
-  background: #555;
-}
+    .project-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-/* About Section */
-#about, #skills, #projects, #contact {
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-#skills .skill-icons i {
-  font-size: 2rem;
-  margin: 0.5rem;
-  color: #007bff;
-}
-
-/* Projects Section */
-.project-grid {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.project-card {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.project-card h3 {
-  margin-bottom: 0.5rem;
-}
-
-.project-card a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.project-card a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #333;
-  color: #fff;
-}
+    .project-card:hover {
+      transform:*
+
