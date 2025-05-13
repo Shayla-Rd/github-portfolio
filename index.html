@@ -24,24 +24,32 @@
     <section id="home">
         <h1>Hi, I'm [Your Name]</h1>
         <p>Mechanical Engineering Student | Passionate about [Your Interests]</p>
+        <a href="#projects">Check out my projects</a>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <!-- Add project details here -->
+        <div class="project">
+            <h3>Project Title</h3>
+            <p>Brief description of the project. Technologies used: [List Technologies]</p>
+            <a href="link-to-project" target="_blank">View Project</a>
+        </div>
+        <!-- Repeat project blocks as needed -->
     </section>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <!-- Add about me details here -->
+        <p>Brief introduction about your academic background, passions, and goals.</p>
+        <a href="YourResume.pdf" download>Download Resume</a>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <!-- Add contact details here -->
+        <p>Email: [Your Email]</p>
+        <p>LinkedIn: <a href="LinkedInProfile" target="_blank">Your LinkedIn</a></p>
     </section>
 
     <!-- Footer -->
@@ -50,63 +58,3 @@
     </footer>
 </body>
 </html>
-CSS:
-css
-Copy code
-/* Reset some basic styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-/* Position the navigation bar at the top-right */
-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    background-color: #333;
-    width: 100%;
-    z-index: 1000; /* Keeps navbar on top */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end; /* Aligns the items to the right */
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-/* Hover effect */
-nav ul li a:hover {
-    background-color: #555;
-}
-
-/* Style for active tab (you can add a class 'active' to an active tab in HTML) */
-nav ul li a.active {
-    background-color: #007BFF;
-    color: white;
-}
-
-/* Section styles */
-section {
-    padding: 50px 20px;
-    margin-top: 60px; /* Add margin to prevent content from being hidden behind fixed navbar */
-    text-align: center;
-}
