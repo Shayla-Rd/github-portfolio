@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Portfolio</title>
+    <title>Shayla Reid's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,23 +29,23 @@
         <div class="project">
             <h3>Project 1</h3>
             <p>Short description of project 1.</p>
-            <a href="https://github.com/yourusername/project1">View Project</a>
+            <a href="https://github.com/shaylareid/project1">View Project</a>
         </div>
         <div class="project">
             <h3>Project 2</h3>
             <p>Short description of project 2.</p>
-            <a href="https://github.com/yourusername/project2">View Project</a>
+            <a href="https://github.com/shaylareid/project2">View Project</a>
         </div>
         <!-- Add more projects here -->
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Feel free to reach out to me via <a href="mailto:your-email@example.com">email</a>.</p>
+        <p>Feel free to reach out to me via <a href="mailto:shayla.reid07@gmail.com">email</a>.</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Your Name</p>
+        <p>&copy; 2025 Shayla Reid</p>
     </footer>
 </body>
 </html>
