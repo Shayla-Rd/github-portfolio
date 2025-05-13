@@ -3,54 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shayla Reid | Mechanical Engineer Portfolio</title>
+    <title>Shayla Reid | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Inline CSS for quick setup (move to styles.css later) */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #0078d7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+        }
+
+        section {
+            padding: 2rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #f4f4f4;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (min-width: 768px) {
+            nav ul {
+                gap: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Shayla Reid</h1>
-            <p>Mechanical Engineer | Innovator | Problem Solver</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Shayla Reid</h1>
+        <p>Mechanical Engineer | Innovator | Problem Solver</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I'm a Mechanical Engineering student with a passion for designing solutions that make everyday life easier. With hands-on experience in mechanical design, prototyping, and problem-solving, I'm dedicated to turning ideas into functional and efficient products.</p>
+            <p>
+                I'm a Mechanical Engineering student with a passion for designing solutions that make everyday life easier. 
+                With hands-on experience in mechanical design, prototyping, and problem-solving, I aim to bring innovative ideas to life.
+            </p>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
-            <h2>My Projects</h2>
+            <h2>Projects</h2>
             <div class="project">
                 <h3>Project 1: Jam-Spreading Machine</h3>
-                <p>A mechanical design for a jam-spreading machine that ensures even distribution of jam on bread.</p>
+                <p>
+                    A mechanical design for a jam-spreading machine that ensures even distribution of jam on bread.
+                </p>
                 <a href="https://github.com/Shayla-Rd/jam-spreader" target="_blank">View on GitHub</a>
             </div>
             <div class="project">
                 <h3>Project 2: Portable Liquid Dispenser</h3>
-                <p>A TSA-approved portable dispenser designed for traveling, optimizing convenience for storing liquids like shampoo and conditioner.</p>
+                <p>
+                    A TSA-approved portable dispenser designed for traveling, optimizing convenience for storing liquids like shampoo and conditioner.
+                </p>
                 <a href="https://github.com/Shayla-Rd/portable-dispenser" target="_blank">View on GitHub</a>
             </div>
-            <!-- Add more projects as you go -->
         </div>
     </section>
 
     <section id="skills">
         <div class="container">
-            <h2>Skills & Tools</h2>
+            <h2>Skills</h2>
             <ul>
                 <li>SolidWorks</li>
                 <li>AutoCAD</li>
@@ -59,23 +136,20 @@
                 <li>FEA (Finite Element Analysis)</li>
                 <li>Python</li>
                 <li>Git & GitHub</li>
-                <!-- Add more skills as needed -->
             </ul>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Contact Me</h2>
+            <h2>Contact</h2>
             <p>Feel free to reach out to me for collaborations or inquiries.</p>
-            <a href="mailto:shayla.reid@example.com">Email Me</a>
+            <a href="mailto:shayla.reid@example.com">shayla.reid@example.com</a>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Shayla Reid</p>
-        </div>
+        <p>&copy; 2025 Shayla Reid. All rights reserved.</p>
     </footer>
 </body>
 </html>
