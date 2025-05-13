@@ -7,18 +7,81 @@
     <title>Shayla Reid | Mechanical Engineer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Example styling for tabs */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #575757;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="navbar-container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- Hero Section -->
@@ -33,11 +96,7 @@
     <section id="about" class="section">
         <div class="section-content">
             <h2>About Me</h2>
-            <p>I am a Mechanical Engineering student at Cornell University with a deep passion for innovation and problem-solving. My journey began at Eleanor Roosevelt High School, where I was part of the prestigious Science and Technology Program. This experience sparked my interest in engineering and provided me with a solid foundation in scientific principles and hands-on problem-solving.
-
-During my time at Howard University, I gained invaluable research experience through an internship that allowed me to explore the flow of particulate matter in Bolivia, contributing to global environmental research. This internship enhanced my analytical skills and fostered my interest in applying engineering solutions to real-world problems.
-
-At Cornell, I am honing my mechanical engineering skills while actively participating in various design projects. From creating functional prototypes to solving complex engineering challenges, I thrive in collaborative environments where creativity and technical knowledge intersect. I am eager to continue my journey, contributing to meaningful projects and advancing sustainable engineering solutions.</p>
+            <p>I am a Mechanical Engineering student at Cornell University with a deep passion for innovation and problem-solving. My journey began at Eleanor Roosevelt High School...</p>
         </div>
     </section>
 
@@ -87,6 +146,5 @@ At Cornell, I am honing my mechanical engineering skills while actively particip
     <footer>
         <p>&copy; 2025 Shayla Reid</p>
     </footer>
-
 </body>
 </html>
