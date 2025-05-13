@@ -1,88 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shayla Reid | Mechanical Engineer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Shayla Reid</h1>
-            <p>Mechanical Engineer | Innovator | Problem Solver</p>
-        </div>
-    </header>
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Hi, I'm [Your Name]</h1>
+    <p>Welcome to my portfolio!</p>
+    <a href="#contact" class="btn">Let's Connect</a>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>I am a Mechanical Engineering student with a passion for designing solutions that make everyday life easier. My experience in mechanical design, prototyping, and problem-solving fuels my drive to create functional and efficient products.</p>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>[Write about yourself here]</p>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="section-content">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>Jam-Spreading Machine</h3>
-                <p>A mechanical design for a jam-spreading machine that ensures even distribution of jam on bread.</p>
-                <a href="https://github.com/Shayla-Rd/jam-spreader" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Portable Liquid Dispenser</h3>
-                <p>A TSA-approved portable dispenser designed for traveling, optimizing convenience for storing liquids like shampoo and conditioner.</p>
-                <a href="https://github.com/Shayla-Rd/portable-dispenser" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-icons">
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-js-square"></i>
+      <!-- Add more based on your skills -->
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="section-content">
-            <h2>Skills & Tools</h2>
-            <ul>
-                <li>SolidWorks</li>
-                <li>AutoCAD</li>
-                <li>3D Printing</li>
-                <li>MATLAB</li>
-                <li>FEA (Finite Element Analysis)</li>
-                <li>Python</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </div>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Brief description of your project.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Brief description of your project.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="section-content">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me for collaborations or inquiries.</p>
-            <a href="mailto:shayla.reid@example.com">Email Me</a>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Get in touch with me via email or social media.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Shayla Reid</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
+style.css
+This file defines the style for the portfolio.
+
+CSS
+/* General Reset */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f7f7f7;
+}
+
+/* Navbar */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: #fff;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#hero .btn {
+  background: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#hero .btn:hover {
+  background: #555;
+}
+
+/* About Section */
+#about, #skills, #projects, #contact {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+#skills .skill-icons i {
+  font-size: 2rem;
+  margin: 0.5rem;
+  color: #007bff;
+}
+
+/* Projects Section */
+.project-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
