@@ -109,6 +109,41 @@
         footer p {
             margin: 0;
         }
+        
+        /* Image Hover Effect */
+        img {
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Button Glow Effect */
+        .button {
+            background-color: #00e5ff;
+            color: #121212;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        .button:hover {
+            box-shadow: 0 0 20px rgba(0, 229, 255, 1);
+            transform: translateY(-3px);
+        }
+
+        /* Background Gradient Animation */
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        body {
+            background: linear-gradient(90deg, #121212, #00e5ff, #ff4081);
+            background-size: 300% 300%;
+            animation: gradient 8s ease infinite;
+        }
     </style>
 </head>
 <body>
