@@ -105,7 +105,25 @@
             color: #e0e0e0;
             font-size: 0.9rem;
         }
-
+        /* Cool Background Effect for Title */
+        .title-effect {
+            font-size: 3.5rem;
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(90deg, #00e5ff, #ff4081, #00e5ff);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: title-animation 4s ease infinite;
+            text-align: center;
+            margin: 0;
+        }
+    
+        @keyframes title-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
         footer p {
             margin: 0;
         }
@@ -149,24 +167,6 @@
             color: #e0e0e0;
             font-size: 0.9rem;
         }
-        /* Cool Background Effect for Title */
-        .title-effect {
-            font-size: 3.5rem;
-            font-family: 'Orbitron', sans-serif;
-            background: linear-gradient(90deg, #00e5ff, #ff4081, #00e5ff);
-            background-size: 200% 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: title-animation 4s ease infinite;
-            text-align: center;
-            margin: 0;
-        }
-    
-        @keyframes title-animation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
     </style>
 </head>
 <body>
@@ -200,10 +200,11 @@
     <!-- Projects Section -->
     <section id="projects" class="section">
         <h2>My Projects</h2>
+        <!-- Internship Subsection -->
         <div class="project">
-            <h3>Orange Crusher (CAD Design)</h3>
-            <p>I created a CAD model for an orange crusher that is designed to help users easily crush oranges with minimal effort. This project was a great exercise in learning how to design functional mechanical systems and refine engineering solutions.</p>            
-            <img src="Orange Crusher Render.png" alt="Orange Crusher" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; margin: 10px;">
+            <h3>Environmental Research Internship at Howard University Beltsville Campus</h3>
+            <p>During my internship at the Howard University Beltsville Campus, I was part of a research team focused on studying the flow of particulate matter in Bolivia. This environmental research project allowed me to apply my engineering background to real-world sustainability issues. I participated in data collection, analysis, and environmental monitoring, providing me with a comprehensive understanding of the challenges involved in creating sustainable engineering solutions for global environmental issues.</p>
+            <p>This internship gave me invaluable insights into the role of mechanical engineering in addressing environmental problems, particularly the design of systems that help monitor and mitigate air pollution. It deepened my appreciation for the intersection of technology, sustainability, and global impact, shaping my future aspirations as an engineer committed to creating solutions that prioritize environmental well-being.</p>
         </div>
         <div class="project">
             <h3>Portable Liquid Dispenser</h3>
@@ -211,15 +212,20 @@
             <img src="portable-dispenser.jpg.png" alt="Portable Liquid Dispenser" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; margin: 10px;"">
         </div>
         <div class="project">
-            <h3>VEX Robotics - State Competition</h3>
-            <p>As part of a team, I built a robot from scratch for the VEX Robotics competition in high school. Our robot successfully reached the state competition, demonstrating our skills in mechanical design and programming.</p>
-            <img src="IMG_2047.JPG" alt="VEX Robotics Robot"style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; margin: 10px;">
-            <img src="IMG_2048.JPG" alt="VEX Robotics Robot" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; margin: 10px;">
+            <h3>Orange Crusher (CAD Design)</h3>
+            <p>I created a CAD model for an orange crusher that is designed to help users easily crush oranges with minimal effort. This project was a great exercise in learning how to design functional mechanical systems and refine engineering solutions.</p>            
+            <img src="Orange Crusher Render.png" alt="Orange Crusher" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; margin: 10px;">
         </div>
         <div class="project">
             <h3>Toy Car Design</h3>
             <p>In my freshman year of college, I worked with a group to design and build a small toy car from scratch. This project taught me the importance of teamwork, prototyping, and testing, as well as refining mechanical designs to meet specific goals.</p>
             <img src="6604F3DA-CD3A-4C7C-8778-A3971CD30DC4.JPG" alt="Toy Car Design" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; margin: 10px;">
+        </div>
+        <div class="project">
+            <h3>VEX Robotics - State Competition</h3>
+            <p>As part of a team, I built a robot from scratch for the VEX Robotics competition in high school. Our robot successfully reached the state competition, demonstrating our skills in mechanical design and programming.</p>
+            <img src="IMG_2047.JPG" alt="VEX Robotics Robot"style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; margin: 10px;">
+            <img src="IMG_2048.JPG" alt="VEX Robotics Robot" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; margin: 10px;">
         </div>
     </section>
 
