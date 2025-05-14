@@ -134,15 +134,20 @@
         }
 
         /* Background Gradient Animation */
-        @keyframes gradient {
+        @keyframes footer-gradient {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-        body {
-            background: linear-gradient(90deg, #121212, #00e5ff, #ff4081);
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(90deg, #001f3f, #0074D9, #001f3f); /* Gradient with shades of blue */
             background-size: 300% 300%;
-            animation: gradient 8s ease infinite;
+            animation: footer-gradient 8s ease infinite; /* Apply the gradient animation */
+            color: #e0e0e0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
