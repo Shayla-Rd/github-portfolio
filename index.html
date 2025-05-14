@@ -149,6 +149,24 @@
             color: #e0e0e0;
             font-size: 0.9rem;
         }
+        /* Cool Background Effect for Title */
+        .title-effect {
+            font-size: 3.5rem;
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(90deg, #00e5ff, #ff4081, #00e5ff);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: title-animation 4s ease infinite;
+            text-align: center;
+            margin: 0;
+        }
+    
+        @keyframes title-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
     </style>
 </head>
 <body>
