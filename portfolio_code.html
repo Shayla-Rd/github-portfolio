@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayla Reid | Mechanical Engineer Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for engineering icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0d2333 0%, #293648 100%);
+            color: #e0e0e0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #14213D;
+            padding: 16px 32px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+        }
+        .navbar .logo {
+            font-family: 'Orbitron', sans-serif;
+            color: #00e5ff;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+        .navbar ul li a {
+            color: #00e5ff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            padding: 7px 14px;
+            transition: background 0.3s, color 0.3s;
+        }
+        .navbar ul li a:hover {
+            background: #00e5ff;
+            color: #14213D;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1280&q=80') center/cover no-repeat;
+            padding: 112px 30px 70px 30px;
+            text-align: center;
+            position: relative;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;top: 0;left: 0;
+            width: 100%;height: 100%;
+            background: rgba(20,33,61,0.78);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3.2rem;
+            color: #00e5ff;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 14px #11244a;
+        }
+        .hero p {
+            font-size: 1.35rem;
+            margin-top: 10px;
+        }
+        section.section {
+            padding: 56px 16px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .section h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            color: #00e5ff;
+            margin-bottom: 16px;
+            border-bottom: 2px solid #264883;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+        .about-container {
+            background: rgba(20,33,61, 0.75);
+            border-radius: 10px;
+            padding: 24px;
+            box-shadow: 0 4px 12px #11244a6b;
+        }
+        /* Project Cards Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+            gap: 32px;
+        }
+        .project-card {
+            background: #21325e;
+            border-radius: 13px;
+            overflow: hidden;
+            box-shadow: 0 6px 24px rgba(27,34,51,0.2);
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+        .project-card:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 10px 32px #00e5ff57;
+        }
+        .project-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #14213D 0%, #1C1D3F 100%);
+        }
+        .project-info {
+            padding: 20px;
+        }
+        .project-info h3 {
+            color: #00e5ff;
+            font-size: 1.32rem;
+            margin: 0 0 8px 0;
+            font-family: 'Orbitron', sans-serif;
+        }
+        .project-info p {
+            font-size: 0.95rem;
+            margin: 0 0 12px 0;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+            gap: 22px;
+            margin-top: 28px;
+        }
+        .skill-item {
+            background: rgba(0,229,255, .08);
+            border: 2px solid #00e5ff33;
+            border-radius: 9px;
+            padding: 23px 10px;
+            text-align: center;
+            box-shadow: 0 2px 9px #0098dc28;
+            font-weight: bold;
+            color: #e0e0e0;
+            transition: border-color 0.25s;
+        }
+        .skill-item:hover {
+            border-color: #00e5ffbb;
+        }
+        .skill-item i {
+            font-size: 2.1rem;
+            color: #00e5ff;
+            margin-bottom: 10px;
+        }
+        .resume-btn {
+            display: inline-block;
+            background: #00e5ff;
+            color: #14213D;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            padding: 14px 30px;
+            margin-top: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 0 18px #00e5ff60;
+            transition: background 0.3s, color 0.3s;
+        }
+        .resume-btn:hover {
+            background: #14213D;
+            color: #00e5ff;
+        }
+        .contact-list {
+            margin-top: 24px;
+            list-style: none;
+            padding: 0;
+            font-size: 1.11rem;
+        }
+        .contact-list li {
+            margin-bottom: 10px;
+        }
+        .contact-list a {
+            color: #00e5ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-list a:hover {
+            color: #eaffff;
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            background: linear-gradient(90deg, #001f3f, #0074D9, #001f3f);
+            color: #e0e0e0;
+            padding: 18px 0;
+            font-size: 1rem;
+            margin-top: 32px;
+            animation: footer-gradient 7s ease-in-out infinite;
+            background-size: 300% 300%;
+        }
+        @keyframes footer-gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="logo"><i class="fas fa-cogs"></i> S. Reid</span>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Shayla Reid</h1>
+            <p>Mechanical Engineer | Innovator | Problem Solver</p>
+            <p><i class="fas fa-industry"></i> <i class="fas fa-drafting-compass"></i> <i class="fas fa-cogs"></i></p>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <p>I am a Mechanical Engineering student at Cornell University with a passion for designing machines and finding solutions to technical challenges. My journey started at Eleanor Roosevelt High School and grew through hands-on internships and research collaborations, including time at Howard University's Beltsville Campus. At Cornell, I continuously explore the intersection of innovation, sustainability, and engineering, working on projects that advance my understanding in mechanics, design, and teamwork.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="RP Poster Screenshot.png" alt="Environmental Research Internship">
+                <div class="project-info">
+                    <h3><i class="fas fa-leaf"></i> Environmental Research Internship</h3>
+                    <p>Collaborated at Howard University Beltsville Campus to study particulate flow in Bolivia, focusing on mechanical design for environmental solutions.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="portable-dispenser.jpg.png" alt="TidyTwist Dispenser">
+                <div class="project-info">
+                    <h3><i class="fas fa-pump-soap"></i> TidyTwist: Portable Liquid Dispenser</h3>
+                    <p>Designed a TSA-approved dispenser with rotating mechanism, focusing on user-centered mechanical design, leak-proof seals, and prototyping.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Orange Crusher Render.png" alt="Orange Crusher CAD">
+                <div class="project-info">
+                    <h3><i class="fas fa-drafting-compass"></i> Orange Crusher (CAD)</h3>
+                    <p>Created an ergonomic CAD model for crushing oranges with minimal effort, integrating design principles for efficient mechanical systems.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="6604F3DA-CD3A-4C7C-8778-A3971CD30DC4.JPG" alt="Toy Car">
+                <div class="project-info">
+                    <h3><i class="fas fa-car-side"></i> Toy Car Design</h3>
+                    <p>Led a college team to design and manufacture a toy car, developing skills in teamwork, mechanical prototyping, and iterative design.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="IMG_2047.JPG" alt="VEX Robotics">
+                <div class="project-info">
+                    <h3><i class="fas fa-robot"></i> VEX Robotics Competition</h3>
+                    <p>Engineered a competitive VEX robot from scratch, showcasing expertise in robotics, mechanical assembly, and strategic design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills & Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="fas fa-drafting-compass"></i> CAD Design (Fusion 360, SolidWorks)</div>
+            <div class="skill-item"><i class="fas fa-cube"></i> 3D Printing</div>
+            <div class="skill-item"><i class="fas fa-chart-line"></i> MATLAB</div>
+            <div class="skill-item"><i class="fas fa-code"></i> Python Programming</div>
+            <div class="skill-item"><i class="fas fa-cogs"></i> Mechanism Design</div>
+            <div class="skill-item"><i class="fas fa-lightbulb"></i> Problem-Solving</div>
+            <div class="skill-item"><i class="fas fa-database"></i> Data Analysis</div>
+            <div class="skill-item"><i class="fas fa-tools"></i> Prototyping & Testing</div>
+            <div class="skill-item"><i class="fas fa-users"></i> Team Leadership</div>
+            <div class="skill-item"><i class="far fa-comments"></i> Communication</div>
+            <div class="skill-item"><i class="fas fa-file-signature"></i> Technical Writing</div>
+            <div class="skill-item"><i class="fas fa-project-diagram"></i> Project Management</div>
+            <div class="skill-item"><i class="fas fa-recycle"></i> Sustainability</div>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <h2>Resume</h2>
+        <a class="resume-btn" href="Shayla Reid Resume.pdf" download>
+            <i class="fas fa-file-download"></i> Download My Resume
+        </a>
+        <!-- You can keep the PDF embed if you like -->
+        <!-- <embed src="Shayla Reid Resume.pdf" width="100%" height="580px" type="application/pdf"> -->
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <ul class="contact-list">
+            <li><i class="fas fa-envelope"></i> <a href="mailto:shayla.reid07@gmail.com">shayla.reid07@gmail.com</a></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:+13015757108">+1 (301) 575-7108</a></li>
+            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/shayla-reid-62b500317/" target="_blank">LinkedIn Profile</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shayla Reid &mdash; Mechanical Engineering Portfolio</p>
+    </footer>
+</body>
+</html>
