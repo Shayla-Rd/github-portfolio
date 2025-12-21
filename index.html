@@ -63,7 +63,6 @@
             padding: 8px 12px;
             border-radius: 5px;
             transition: all 0.3s;
-            cursor: pointer;
             text-transform: uppercase;
             font-family: var(--font-display);
         }
@@ -75,7 +74,7 @@
 
         /* --- Tab/Section Logic --- */
         .tab-content {
-            display: none; /* Hidden by default */
+            display: none;
             padding: 40px 24px;
             max-width: 1100px;
             margin: 0 auto;
@@ -83,7 +82,7 @@
         }
 
         .tab-content.active {
-            display: block; /* Shown when active */
+            display: block;
         }
 
         @keyframes fadeIn {
@@ -91,7 +90,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* --- Hero (Static on Home Tab) --- */
+        /* --- Hero --- */
         .hero {
             background: linear-gradient(rgba(17, 23, 35, 0.8), rgba(17, 23, 35, 0.8)), url('https://images.unsplash.com/photo-1581093510204-78363364f51e?q=80&w=1974&auto=format&fit=crop') center center/cover;
             padding: 100px 20px;
@@ -101,9 +100,8 @@
         }
 
         .hero h1 { font-size: 3.5rem; margin: 0; color: var(--color-accent); font-family: var(--font-display); }
-        .hero p { font-size: 1.2rem; opacity: 0.9; }
 
-        /* --- Resume Section (Centered & High) --- */
+        /* --- Resume Section --- */
         .resume-section {
             text-align: center;
             padding: 40px 0;
@@ -129,7 +127,7 @@
 
         .resume-btn:hover { transform: scale(1.05); background: white; }
 
-        /* --- Common Styles --- */
+        /* --- Cards --- */
         h2 { text-align: center; text-transform: uppercase; font-size: 2rem; margin-bottom: 40px; }
         
         .card {
@@ -167,12 +165,10 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            font-size: 0.9rem;
         }
 
         .video-btn { background: #ff0000; color: white; }
 
-        /* --- Footer --- */
         footer {
             text-align: center;
             padding: 40px;
@@ -184,7 +180,6 @@
         @media (max-width: 768px) {
             .navbar { flex-direction: column; padding: 10px; }
             .navbar ul { flex-wrap: wrap; justify-content: center; }
-            .hero h1 { font-size: 2rem; }
         }
     </style>
 </head>
@@ -193,17 +188,17 @@
     <nav class="navbar">
         <span class="logo">SHAYLA REID</span>
         <ul>
-            <li><a onclick="showTab('home')" id="nav-home" class="active">Home</a></li>
-            <li><a onclick="showTab('projects')" id="nav-projects">Projects</a></li>
-            <li><a onclick="showTab('mae3230')" id="nav-mae3230">MAE 3230</a></li>
-            <li><a onclick="showTab('mae3260')" id="nav-mae3260">MAE 3260</a></li>
-            <li><a onclick="showTab('mae3270')" id="nav-mae3270">MAE 3270</a></li>
-            <li><a onclick="showTab('skills')" id="nav-skills">Skills</a></li>
-            <li><a onclick="showTab('contact')" id="nav-contact">Contact</a></li>
+            <li><a href="#home" id="nav-home">Home</a></li>
+            <li><a href="#projects" id="nav-projects">Projects</a></li>
+            <li><a href="#mae3230" id="nav-mae3230">MAE 3230</a></li>
+            <li><a href="#mae3260" id="nav-mae3260">MAE 3260</a></li>
+            <li><a href="#mae3270" id="nav-mae3270">MAE 3270</a></li>
+            <li><a href="#skills" id="nav-skills">Skills</a></li>
+            <li><a href="#contact" id="nav-contact">Contact</a></li>
         </ul>
     </nav>
 
-    <div id="home" class="tab-content active">
+    <div id="home" class="tab-content">
         <header class="hero">
             <h1>Shayla Reid</h1>
             <p>Mechanical Engineer | Cornell University</p>
@@ -219,9 +214,7 @@
 
         <div class="card">
             <h3>About Me</h3>
-            <p>I’m a mechanical engineering student with a strong interest in how hardware behaves in the real world—fluids, mechanisms, aerodynamics, and anything that involves building something that actually moves. Most of my work so far has been hands-on: designing parts in CAD, testing prototypes, running quick analytical models, and then comparing those predictions to what the hardware actually does. I like projects where I can take something apart, understand how it moves energy around, and then explain that system in a clear technical story.
-
-I’ve worked on mechanical design projects, fluid-system analysis, and group research assignments, and I’m continuing to build experience with simulation tools, rapid prototyping, and experimental testing. I’m interested in roles that mix analysis with practical implementation—whether that’s in aerospace, robotics, or any environment where hardware performance matters. My goal is to keep building judgment grounded in physics, validate with data, and communicate results in a way that is useful to a team.</p>
+            <p>I’m a mechanical engineering student with a strong interest in how hardware behaves in the real world—fluids, mechanisms, aerodynamics, and anything that involves building something that actually moves. I like projects where I can take something apart, understand how it moves energy around, and then explain that system in a clear technical story.</p>
         </div>
     </div>
 
@@ -253,14 +246,13 @@ I’ve worked on mechanical design projects, fluid-system analysis, and group re
     </div>
 
     <div id="mae3230" class="tab-content">
-    <h2>MAE 3230 &mdash; Fluid Mechanics</h2>
-    <div class="card">
-        <img src="chainsaw-fluid.png" alt="Chainsaw Fluid Dynamics Analysis" style="width:100%; border-radius:10px; margin-bottom:20px; border: 1px solid var(--color-accent);">
-        
-        <h3>Chainsaw Engine Fluid Mechanical Dissection</h3>
-        <p>As part of MAE 3230 (Fluid Mechanics), I completed a technical project in which my group was assigned a gas-powered chainsaw and asked to produce an instructional video describing its fluid-dynamic behavior. We worked together on the teardown and system explanation, and I focused on disassembling the engine housing to access the flywheel for analysis. My technical contribution centered on the rotating flow field generated by the flywheel blades and how that motion supports engine cooling. After isolating the flywheel from the crankshaft assembly, I examined how the blades behave like a small centrifugal impeller: mass flow remains approximately constant as air moves outward, the increasing flow area reduces the radial component of velocity, and the growing blade speed increases the tangential component. The result is a net rise in fluid kinetic energy and a corresponding pressure increase that reflects the shaft work transferred to the air. That outward spiral drives forced convection across the cylinder fins and ignition components to manage engine temperature during operation.</p>
-        <p>The project reinforced several core ideas from the course: how rotating machinery imparts energy to a fluid, how flow geometry influences velocity components, and how kinetic-energy changes translate into usable pressure and cooling. Getting inside the hardware made the control-volume and momentum principles from lecture feel practical, and it showed how a compact consumer tool integrates multiple small-scale fluid systems.</p>
-        <a href="https://www.youtube.com/watch?v=Y2zX-fvSyLw" target="_blank" class="btn-link video-btn"><i class="fab fa-youtube"></i> Watch Project Video</a>
+        <h2>MAE 3230 &mdash; Fluid Mechanics</h2>
+        <div class="card">
+            <img src="chainsaw-fluid.png" alt="Chainsaw Fluid Dynamics Analysis" style="width:100%; border-radius:10px; margin-bottom:20px; border: 1px solid var(--color-accent);">
+            <h3>Chainsaw Engine Fluid Mechanical Dissection</h3>
+            <p>As part of MAE 3230 (Fluid Mechanics), I completed a technical project in which my team selected a mechanical system and produced an instructional video explaining its fluid-dynamic behavior. Our assigned system was a gas-powered chainsaw. I led the mechanical teardown, removing the external housing and isolating individual subsystems for analysis. My primary technical contribution focused on the rotating flow generated by the flywheel. After separating the flywheel from the crankshaft assembly, I evaluated how the blades act as a centrifugal impeller and how angular momentum is converted into useful airflow. Because the flywheel is rigidly mounted on the crankshaft, its rotational speed matches the piston cycle, and the blade geometry sets up outward flow across the engine. </p>
+            <p>From a fluid-mechanics standpoint, the air experiences constant mass flow as radius increases, but the changing flow area causes radial velocity to decrease while the tangential component grows with blade speed. This produces a net rise in fluid kinetic energy, and the corresponding pressure increase reflects the mechanical work transferred into the flow. That outward spiral delivers forced convection over the cylinder fins and ignition components, preventing thermal failure during extended operation.</p>
+            <a href="https://www.youtube.com/watch?v=Y2zX-fvSyLw" target="_blank" class="btn-link video-btn"><i class="fab fa-youtube"></i> Watch Project Video</a>
         </div>
     </div>
 
@@ -268,7 +260,7 @@ I’ve worked on mechanical design projects, fluid-system analysis, and group re
         <h2>MAE 3260 &mdash; System Dynamics</h2>
         <div class="card">
             <h3>Toy Quadcopter Dynamics Analysis</h3>
-            <p>Developed a model linking motor voltage to propeller speed, thrust, and altitude. I used a high-speed camera to record the propeller’s step response and extracted speed and timing data to estimate the motor gain and time constant. This work involved interpreting real experimental data to explain dynamic behavior in an open-loop system.</p>
+            <p>Developed a model linking motor voltage to propeller speed, thrust, and altitude. I used a high-speed camera to record the propeller’s step response and extracted speed and timing data to estimate the motor gain and time constant.</p>
             <a href="MAE3260_FinalGroupwork Report.pdf" download class="btn-link"><i class="fas fa-file-download"></i> Download Report</a>
         </div>
     </div>
@@ -277,7 +269,7 @@ I’ve worked on mechanical design projects, fluid-system analysis, and group re
         <h2>MAE 3270 &mdash; Mechanical Design</h2>
         <div class="card">
             <h3>Torque Wrench Design & Analysis</h3>
-            <p>Designed a torque wrench capable of withstanding ±600 in-lbf loading. We used iterative design scripts in MATLAB to explore geometries and materials, followed by a detailed CAD model and finite element stress analyses in ANSYS to verify static, fatigue, and fracture criteria.</p>
+            <p>Designed a torque wrench capable of withstanding ±600 in-lbf loading. We used iterative design scripts in MATLAB to explore geometries and materials, followed by a detailed CAD model and finite element stress analyses in ANSYS.</p>
             <a href="mae-3270-final-homework.pdf" download class="btn-link"><i class="fas fa-file-download"></i> Download Report</a>
         </div>
     </div>
@@ -305,7 +297,10 @@ I’ve worked on mechanical design projects, fluid-system analysis, and group re
     </footer>
 
     <script>
-        function showTab(tabId) {
+        function handleRouting() {
+            // Get current ID from URL (e.g. #mae3230) or default to #home
+            let tabId = window.location.hash.substring(1) || 'home';
+            
             // Hide all tabs
             const tabs = document.querySelectorAll('.tab-content');
             tabs.forEach(tab => tab.classList.remove('active'));
@@ -315,14 +310,23 @@ I’ve worked on mechanical design projects, fluid-system analysis, and group re
             navLinks.forEach(link => link.classList.remove('active'));
 
             // Show current tab
-            document.getElementById(tabId).classList.add('active');
-
-            // Set current nav link to active
-            document.getElementById('nav-' + tabId).classList.add('active');
-
-            // Scroll to top
+            const targetTab = document.getElementById(tabId);
+            if(targetTab) {
+                targetTab.classList.add('active');
+                // Highlight nav link
+                const activeLink = document.getElementById('nav-' + tabId);
+                if(activeLink) activeLink.classList.add('active');
+            } else {
+                // Fallback to home if link is broken
+                window.location.hash = 'home';
+            }
             window.scrollTo(0,0);
         }
+
+        // Run when page loads
+        window.addEventListener('load', handleRouting);
+        // Run when URL hash changes (user clicks back or nav link)
+        window.addEventListener('hashchange', handleRouting);
     </script>
 </body>
 </html>
